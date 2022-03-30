@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Rose', cursive;
+}
+                    /* NAVBAR INICIAL*/
+
+.navbar{
+    background-color: rgb(33, 20, 151);
+    text-decoration: none;
+    
+}
+.navbar-brand{
+    text-decoration: none;
+    color: white;
+}
+#navbar1{
+    color: white;
+
+}
+#navbar1 .nav-link {
+    color: white;
+    margin: 10px;
+}
+                    /* IMAGEN PRINCIPAL INDEX*/
+.imagenFondo{
+    background-image: url(../recursos/todas\ las\ marcas.jpeg);
+    background-size: cover;
+    height: 500px;
+}
+.imagenFondo__texto{
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    padding: 150px;
+
+}
+                    /* CAJAS DE INCIO DESCUENTOS*/
+.caja{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(179, 179, 179);
+    margin: 15 auto;
+    padding: 15 auto;
+    
+}
+.cajaCard1{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+
+}
+.cajaCard2{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+
+}
+.cajaCard3{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+.cajaCard4{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+.cajaCard5{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.cajaCard__imagen{
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+.cajaCard__texto{
+    text-align: center;
+    font-size: 15px;
+}
+
+                    /* NOSOTROS*/
+.ImagenPrincipal{
+    background-image: url(../recursos/abstract-colorful-background-free-vector.jpg);
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 280px;
+    color: white;
+    
+}
+.ImagenPrincipal h2{
+    font-size: 80px;
+
+}
+.ImagenPrincipal h4{
+    font-size: 30px;
+    
+
+} 
+                    /* AYUDA*/
+.ayuda{
+    background-color: rgb(56, 56, 148);
+    color: white;
+}
+.ayuda__titulo{
+    font-size: 20px;
+    background-color: rgb(116, 116, 223);
+
+}
+.ayuda__parrafo{
+    font-size: 16px;
+
+}
+
+
+
+
+
+                    /* FOOTER GENERAL*/
+
+.footer{
+    background-color:  rgb(33, 20, 151);
+    color: white;
+    height: 200px;
+    text-align: center;
+}
