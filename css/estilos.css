@@ -147,30 +147,85 @@
     height: 700px;
     display: grid;
     grid-template-areas:    
-    "vacio1 titulo vacio2"
-    "vacio1 texto vacio2"
-    "vacio1 vacio3 vacio2";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    "titulo"
+    " texto";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     color: white;
     margin: auto;
 
 }
 #imagenNosotros #titulo {
     grid-area: titulo;
+    font-size: 60px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 160px;
+
 }
 #imagenNosotros #texto {
     grid-area: texto;
-    font-size: 15px;
+    font-size: 30px;
     justify-content: center;
     text-align: center;
-    margin-top: 50px;
+    margin-top: -50px;
+}
+/* cuadros con imagen NOSOTROS*/
+#nosotros{
+    display: grid;
+    grid-template-areas: "cuadro1 cuadro2 cuadro3";
+    height: auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin: auto;
+    background-color: aqua;
+}
+#nosotros .cuadro1 {
+    grid-area: cuadro1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+#nosotros .cuadro2 {
+    grid-area: cuadro2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    
+}
+#nosotros .cuadro3 {
+    grid-area: cuadro3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    
+}
+.cuadroimg{
+    display: block;
+    height: 100px;
+    width: 200px;
+    margin: 0 auto;
+}
+.cuadrotxt{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+
 }
                     /* AYUDA*/
 .ayuda{
@@ -228,14 +283,14 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-top: 200px;
+        margin-top: 140px;
     }
     #imagenFondo #texto {
         grid-area: texto;
         font-size: 15px;
         justify-content: center;
         text-align: center;
-        margin-top: 50px;
+        margin-top: -60px;
     }
     
     /*NOSOTROS MAX 767PX */
@@ -257,6 +312,7 @@
     }
     #imagenNosotros #titulo {
         grid-area: titulo;
+        font-size: 40px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -270,6 +326,98 @@
         justify-content: center;
         text-align: center;
         margin-top: -60px;
+    }
+    #nosotros{
+        display: grid;
+        grid-template-areas: "cuadro1" "cuadro2" "cuadro3";
+        height: auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        margin: auto;
+        background-color: aqua;
+    }
+
+    
+
+}
+@media (max-width: 480px) {
+    /* IMAGEN PRINCIPAL INDEX MAX 480PX */
+    #imagenFondo{
+        background-image: url(../recursos/todas\ las\ marcas.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        display: grid;
+        grid-template-areas:    
+        "titulo"
+        "texto";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        
+        color: white;
+        margin: auto;
+    
+    }
+    #imagenFondo #titulo {
+        grid-area: titulo;
+        font-size: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+    #imagenFondo #texto {
+        grid-area: texto;
+        font-size: 15px;
+        justify-content: center;
+        text-align: center;
+        margin-top: -50px;
+    }
+    
+    /*NOSOTROS MAX 480PX */
+    
+    #imagenNosotros{
+        background-image: url(../recursos/abstract-colorful-background-free-vector.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        display: grid;
+        grid-template-areas:    
+        "titulo"
+        "texto";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        color: white;
+        margin: auto;
+    
+    }
+    #imagenNosotros #titulo {
+        grid-area: titulo;
+        font-size: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+    #imagenNosotros #texto {
+        grid-area: texto;
+        font-size: 15px;
+        justify-content: center;
+        text-align: center;
+        margin-top: -50px;
+    }
+    #nosotros{
+        display: grid;
+        grid-template-areas: "cuadro1" "cuadro2" "cuadro3";
+        height: auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        margin: auto;
+        background-color: aqua;
     }
 
 }
