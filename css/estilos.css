@@ -23,69 +23,42 @@
     margin: 10px;
 }
                     /* IMAGEN PRINCIPAL INDEX*/
-.imagenFondo{
-    background-image: url(../recursos/todas\ las\ marcas.jpeg);
-    background-size: cover;
-    height: 500px;
-}
-.imagenFondo__texto{
-    font-size: 80px;
-    color: white;
-    text-align: center;
-    align-items: center;
-    padding: 150px;
 
-}
-/*IMAGEN PRINCIPAL DE INICIO*/
-#imagen-Principal {
+#imagenFondo{
     background-image: url(../recursos/todas\ las\ marcas.jpeg);
     background-size: cover;
     background-position: center;
-    height: 500px;
-    display: -ms-grid;
+    height: 700px;
     display: grid;
-    grid-template-areas:    "vacio1 titulo vacio2"
-                            "vacio1 texto vacio2"
-                            "vacio1 vacio3 vacio2";
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:    
+    "titulo"
+    "texto";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    
     color: white;
     margin: auto;
-}
 
-#imagen-Principal #titulo {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
+}
+#imagenFondo #titulo {
     grid-area: titulo;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     font-size: 70px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     margin-top: 200px;
 }
-
-#imagen-Principal #texto {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
+#imagenFondo #texto {
     grid-area: texto;
-    font-size: 15px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    font-size: 30px;
+    justify-content: center;
     text-align: center;
     margin-top: 50px;
 }
+
+
 
 
 
@@ -166,25 +139,39 @@
 }
 
                     /* NOSOTROS*/
-.ImagenPrincipal{
+
+#imagenNosotros{
     background-image: url(../recursos/abstract-colorful-background-free-vector.jpg);
     background-size: cover;
+    background-position: center;
     height: 700px;
-    text-align: center;
-    flex-direction: column;
-    padding-top: 280px;
+    display: grid;
+    grid-template-areas:    
+    "vacio1 titulo vacio2"
+    "vacio1 texto vacio2"
+    "vacio1 vacio3 vacio2";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     color: white;
-    
-}
-.ImagenPrincipal h2{
-    font-size: 80px;
+    margin: auto;
 
 }
-.ImagenPrincipal h4{
-    font-size: 30px;
-    
-
-} 
+#imagenNosotros #titulo {
+    grid-area: titulo;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+}
+#imagenNosotros #texto {
+    grid-area: texto;
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
                     /* AYUDA*/
 .ayuda{
     background-color: rgb(56, 56, 148);
@@ -211,4 +198,78 @@
     color: white;
     height: 200px;
     text-align: center;
+}
+
+                    /* MEDIA QUERIES */
+
+@media (max-width: 767px) {
+    /* IMAGEN PRINCIPAL INDEX MAX 767PX */
+    #imagenFondo{
+        background-image: url(../recursos/todas\ las\ marcas.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: grid;
+        grid-template-areas:    
+        "titulo"
+        "texto";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        
+        color: white;
+        margin: auto;
+    
+    }
+    #imagenFondo #titulo {
+        grid-area: titulo;
+        font-size: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 200px;
+    }
+    #imagenFondo #texto {
+        grid-area: texto;
+        font-size: 15px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    /*NOSOTROS MAX 767PX */
+    
+    #imagenNosotros{
+        background-image: url(../recursos/abstract-colorful-background-free-vector.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: grid;
+        grid-template-areas:    
+        "titulo"
+        "texto";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        color: white;
+        margin: auto;
+    
+    }
+    #imagenNosotros #titulo {
+        grid-area: titulo;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 140px;
+    }
+    #imagenNosotros #texto {
+        grid-area: texto;
+        font-size: 15px;
+        justify-content: center;
+        text-align: center;
+        margin-top: -60px;
+    }
+
 }
