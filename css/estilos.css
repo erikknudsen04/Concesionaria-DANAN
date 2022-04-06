@@ -32,9 +32,63 @@
     font-size: 80px;
     color: white;
     text-align: center;
+    align-items: center;
     padding: 150px;
 
 }
+/*IMAGEN PRINCIPAL DE INICIO*/
+#imagen-Principal {
+    background-image: url(../recursos/todas\ las\ marcas.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas:    "vacio1 titulo vacio2"
+                            "vacio1 texto vacio2"
+                            "vacio1 vacio3 vacio2";
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    color: white;
+    margin: auto;
+}
+
+#imagen-Principal #titulo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: titulo;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 70px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+}
+
+#imagen-Principal #texto {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: texto;
+    font-size: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
                     /* CAJAS DE INCIO DESCUENTOS*/
 .caja{
     display:flex;
