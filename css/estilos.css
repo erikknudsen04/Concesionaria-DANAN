@@ -74,63 +74,22 @@
     padding: 15 auto;
     
 }
-.cajaCard1{
+.cajaCard{
     display: flex;
     flex-direction: column;
     margin: 10px;
     padding: 10px;
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 500px;
     text-align: center;
     background-color: rgb(255, 255, 255);
 
-}
-.cajaCard2{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    height: 300px;
-    width: 300px;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-
-}
-.cajaCard3{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    height: 300px;
-    width: 300px;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-}
-.cajaCard4{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    height: 300px;
-    width: 300px;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-}
-.cajaCard5{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    height: 300px;
-    width: 300px;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
 }
 
 .cajaCard__imagen{
     display: block;
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 400px;
     margin: 0 auto;
 }
 .cajaCard__texto{
@@ -173,60 +132,70 @@
     text-align: center;
     margin-top: -50px;
 }
-/* cuadros con imagen NOSOTROS*/
+/* cuadros con imagen NOSOTROS
 #nosotros{
     display: grid;
-    grid-template-areas: "cuadro1 cuadro2 cuadro3";
-    height: auto;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    height: 700px;
+    grid-template-areas: 
+    "cuadrotxt1 cuadrotxt2 cuadrotxt3"
+    "cuadroimg1 cuadroimg2 cuadroimg3";
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     margin: auto;
     background-color: aqua;
 }
-#nosotros .cuadro1 {
-    grid-area: cuadro1;
+#nosotros #cuadrotxt1 {
+    grid-area: cuadrotxt1;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
 }
-#nosotros .cuadro2 {
-    grid-area: cuadro2;
+#nosotros #cuadrotxt2 {
+    grid-area: cuadrotxt2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     
 }
-#nosotros .cuadro3 {
-    grid-area: cuadro3;
+#nosotros #cuadrotxt3 {
+    grid-area: cuadrotxt3;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     
 }
-.cuadroimg{
+#nosotros #cuadroimg1 {
+    grid-area: cuadroimg1;
     display: block;
-    height: 100px;
-    width: 200px;
+    height: 300px;
+    width: 400px;
     margin: 0 auto;
 }
-.cuadrotxt{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 20px;
-
+#nosotros #cuadroimg2 {
+    grid-area: cuadroimg3;
+    display: block;
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
 }
+#nosotros #cuadroimg3 {
+    grid-area: cuadroimg3;
+    display: block;
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+}
+*/
                     /* AYUDA*/
 .ayuda{
     background-color: rgb(56, 56, 148);
@@ -327,14 +296,29 @@
         text-align: center;
         margin-top: -60px;
     }
-    #nosotros{
-        display: grid;
-        grid-template-areas: "cuadro1" "cuadro2" "cuadro3";
-        height: auto;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        margin: auto;
-        background-color: aqua;
+    
+    /*cajas de productos MAX 767PX*/
+    .cajaCard{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        height: 250px;
+        width: 250px;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+    
+    }
+    
+    .cajaCard__imagen{
+        display: block;
+        height: 150px;
+        width: 150px;
+        margin: 0 auto;
+    }
+    .cajaCard__texto{
+        text-align: center;
+        font-size: 15px;
     }
 
     
@@ -410,14 +394,54 @@
         text-align: center;
         margin-top: -50px;
     }
-    #nosotros{
-        display: grid;
-        grid-template-areas: "cuadro1" "cuadro2" "cuadro3";
-        height: auto;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        margin: auto;
-        background-color: aqua;
+    
+    /*cajas de productos MAX 480PX*/
+    .cajaCard{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        height: 300px;
+        width: 300px;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+    
+    }
+    
+    .cajaCard__imagen{
+        display: block;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+    }
+    .cajaCard__texto{
+        text-align: center;
+        font-size: 15px;
     }
 
+}
+@media (max-width: 1080px) {
+    /*cajas de productos MAX 1080*/
+    .cajaCard{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        height: 350px;
+        width: 350px;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+    
+    }
+    
+    .cajaCard__imagen{
+        display: block;
+        height: 250px;
+        width: 250px;
+        margin: 0 auto;
+    }
+    .cajaCard__texto{
+        text-align: center;
+        font-size: 15px;
+    }
 }
