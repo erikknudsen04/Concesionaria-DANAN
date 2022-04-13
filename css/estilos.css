@@ -10,6 +10,14 @@
     text-decoration: none;
     
 }
+.navbar li{
+    transition: all .5s;
+}
+.navbar li:hover{
+    background-color: rgb(49, 29, 223);
+    padding: 1px;
+    margin: 1px;
+}
 .navbar-brand{
     text-decoration: none;
     color: white;
@@ -72,8 +80,11 @@
     background-color: rgb(179, 179, 179);
     margin: 15 auto;
     padding: 15 auto;
+
+    
     
 }
+
 .cajaCard{
     display: flex;
     flex-direction: column;
@@ -83,6 +94,7 @@
     width: 500px;
     text-align: center;
     background-color: rgb(255, 255, 255);
+    transition: all .7s;
 
 }
 
@@ -303,11 +315,14 @@
         flex-direction: column;
         margin: 10px;
         padding: 10px;
-        height: 250px;
-        width: 250px;
+        height: 300px;
+        width: 300px;
         text-align: center;
         background-color: rgb(255, 255, 255);
-    
+    }
+    .cajaCard:hover{
+        height: 400px;
+        width: 400px;
     }
     
     .cajaCard__imagen{
@@ -405,7 +420,10 @@
         width: 300px;
         text-align: center;
         background-color: rgb(255, 255, 255);
-    
+    }
+    .cajaCard:hover{
+        height: 400px;
+        width: 400px;
     }
     
     .cajaCard__imagen{
@@ -427,12 +445,17 @@
         flex-direction: column;
         margin: 10px;
         padding: 10px;
-        height: 350px;
-        width: 350px;
+        height: 450px;
+        width: 450px;
         text-align: center;
         background-color: rgb(255, 255, 255);
     
     }
+    .cajaCard:hover{
+        height: 470px;
+        width: 470px;
+    }
+        
     
     .cajaCard__imagen{
         display: block;
@@ -440,8 +463,28 @@
         width: 250px;
         margin: 0 auto;
     }
+    
     .cajaCard__texto{
         text-align: center;
         font-size: 15px;
     }
 }
+@media (min-width: 1080px) {
+    .cajaCard{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        height: 500px;
+        width: 500px;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+    
+    }
+    .cajaCard:hover{
+        height: 520px;
+        width: 520px;
+    }
+
+}
+
