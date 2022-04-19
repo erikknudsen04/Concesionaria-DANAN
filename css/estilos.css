@@ -32,6 +32,8 @@
 }
                     /* IMAGEN PRINCIPAL INDEX*/
 
+
+
 #imagenFondo{
     background-image: url(../recursos/todas\ las\ marcas.jpeg);
     background-size: cover;
@@ -80,8 +82,6 @@
     background-color: rgb(179, 179, 179);
     margin: 15 auto;
     padding: 15 auto;
-
-    
     
 }
 
@@ -90,19 +90,21 @@
     flex-direction: column;
     margin: 10px;
     padding: 10px;
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     text-align: center;
     background-color: rgb(255, 255, 255);
     transition: all .7s;
+    border-radius: 1rem;
 
 }
 
 .cajaCard__imagen{
-    display: block;
-    height: 400px;
-    width: 400px;
+    width: 100%;
+    height: 65%;
     margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
 }
 .cajaCard__texto{
     text-align: center;
@@ -209,23 +211,17 @@
 }
 */
                     /* AYUDA*/
-.ayuda{
-    background-color: rgb(56, 56, 148);
-    color: white;
-}
-.ayuda__titulo{
+
+
+.accordion-item{
     font-size: 20px;
     background-color: rgb(116, 116, 223);
 
 }
-.ayuda__parrafo{
-    font-size: 16px;
-
+.accordion-button{
+    background-color: rgb(56, 56, 148);
+    color: white;
 }
-
-
-
-
 
                     /* FOOTER GENERAL*/
 
@@ -326,10 +322,11 @@
     }
     
     .cajaCard__imagen{
-        display: block;
-        height: 150px;
-        width: 150px;
+        width: 100%;
+        height: 65%;
         margin: 0 auto;
+        object-fit: cover;
+        object-position: center;
     }
     .cajaCard__texto{
         text-align: center;
@@ -427,10 +424,11 @@
     }
     
     .cajaCard__imagen{
-        display: block;
-        height: 200px;
-        width: 200px;
+        width: 100%;
+        height: 65%;
         margin: 0 auto;
+        object-fit: cover;
+        object-position: center;
     }
     .cajaCard__texto{
         text-align: center;
@@ -445,23 +443,24 @@
         flex-direction: column;
         margin: 10px;
         padding: 10px;
-        height: 450px;
-        width: 450px;
+        height: 400px;
+        width: 400px;
         text-align: center;
         background-color: rgb(255, 255, 255);
     
     }
     .cajaCard:hover{
-        height: 470px;
-        width: 470px;
+        height: 420px;
+        width: 420px;
     }
     
     
     .cajaCard__imagen{
-        display: block;
-        height: 250px;
-        width: 250px;
+        width: 100%;
+        height: 65%;
         margin: 0 auto;
+        object-fit: cover;
+        object-position: center;
     }
     
     .cajaCard__texto{
