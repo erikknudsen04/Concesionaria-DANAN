@@ -216,20 +216,73 @@
 .accordion-item{
     font-size: 20px;
     background-color: rgb(116, 116, 223);
+    
 
 }
 .accordion-button{
     background-color: rgb(56, 56, 148);
     color: white;
+    padding: 20px;
+}
+
+.accordion{
+    margin: 40px 40px;
+}
+
+.accordion-body{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
 }
 
                     /* FOOTER GENERAL*/
-
 .footer{
-    background-color:  rgb(33, 20, 151);
+    width: 100%;
+    background-color: rgb(33, 20, 151);
+}
+.footer .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.footer .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .grupo1 .box figure h1{
+    font-size: 3rem;
+    text-decoration: none;
     color: white;
-    height: 200px;
+}
+.footer .grupo1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+.footer .grupo1 .box p{
+    color: rgb(230, 219, 219);
+    margin-bottom: 10px;
+}
+.footer .grupo1 .red-social a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
     text-align: center;
+}
+.footer .derechos{
+    background-color: rgb(58, 39, 228);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
 }
 
                     /* MEDIA QUERIES */
@@ -331,6 +384,13 @@
     .cajaCard__texto{
         text-align: center;
         font-size: 15px;
+    }
+    /*footer*/
+    .footer .grupo1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
     }
 
     
