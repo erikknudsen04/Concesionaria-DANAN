@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Red Rose', cursive;
+    
 }
                     /* NAVBAR INICIAL*/
 
@@ -15,8 +16,7 @@
 }
 .navbar li:hover{
     background-color: rgb(49, 29, 223);
-    padding: 1px;
-    margin: 1px;
+    
 }
 .navbar-brand{
     text-decoration: none;
@@ -79,9 +79,10 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    background-color: rgb(179, 179, 179);
+    background-color: rgb(228, 228, 228);
     margin: 15 auto;
     padding: 15 auto;
+    
     
 }
 
@@ -96,6 +97,9 @@
     background-color: rgb(255, 255, 255);
     transition: all .7s;
     border-radius: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    
 
 }
 
@@ -146,76 +150,88 @@
     text-align: center;
     margin-top: -50px;
 }
-/* cuadros con imagen NOSOTROS
-#nosotros{
-    display: grid;
-    height: 700px;
-    grid-template-areas: 
-    "cuadrotxt1 cuadrotxt2 cuadrotxt3"
-    "cuadroimg1 cuadroimg2 cuadroimg3";
-    
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin: auto;
-    background-color: aqua;
-}
-#nosotros #cuadrotxt1 {
-    grid-area: cuadrotxt1;
+
+.contenedor{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    font-size: 15px;
-}
-#nosotros #cuadrotxt2 {
-    grid-area: cuadrotxt2;
-    display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 15px;
+    min-height: 80vh;
+    width: 100%;
+    background-color:rgb(255, 255, 255) ;
+
+    
     
 }
-#nosotros #cuadrotxt3 {
-    grid-area: cuadrotxt3;
+.contenedor .card{
+    width: 330px;
+    height: 416px;
+    padding: 60px 30px;
+    margin: 20px;
+    background-color: rgb(96, 72, 235);
+    border-radius: 20px;
+}
+.contenedor .card .contenido{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedor .card .contenido .contenidoImagen{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.contenedor .card .contenido .contenidoTexto h4{
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    font-weight: bold;
     text-align: center;
-    font-size: 15px;
+    letter-spacing: 1px;
+}
+.contenedor .card .contenido .contenidoTexto h5{
+    color: #b0b1b4;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
     
 }
-#nosotros #cuadroimg1 {
-    grid-area: cuadroimg1;
-    display: block;
-    height: 300px;
-    width: 400px;
-    margin: 0 auto;
+.contenedor .card .contenido .contenidoImagen img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-#nosotros #cuadroimg2 {
-    grid-area: cuadroimg3;
-    display: block;
-    height: 300px;
-    width: 400px;
-    margin: 0 auto;
+.contenedor .card .contenido .contenidoLinks{
+    margin-top: 20px;
 }
-#nosotros #cuadroimg3 {
-    grid-area: cuadroimg3;
-    display: block;
-    height: 300px;
-    width: 400px;
-    margin: 0 auto;
+.contenedor .card .contenido .contenidoLinks a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    margin: 10px;
 }
-*/
+
                     /* AYUDA*/
 
 
 .accordion-item{
-    font-size: 20px;
-    background-color: rgb(116, 116, 223);
+    background-color: rgb(35, 35, 100);
+}
+.accordion-button{
+    padding: 10px 10px;
+    margin: 20px 20px;
+}
+
+.accordion-item .accordionTexto2{
+    text-align: left;
+    font-style: italic;
+    font-size: 1rem;
     
 
 }
@@ -227,6 +243,7 @@
 
 .accordion{
     margin: 40px 40px;
+    padding: 20px 20px;
 }
 
 .accordion-body{
@@ -284,7 +301,10 @@
     color: #fff;
     font-size: 15px;
 }
-
+.footer .grupo1 .box i{
+    background-color: aliceblue;
+    height: 20px;
+}
                     /* MEDIA QUERIES */
 
 @media (max-width: 767px) {
@@ -544,6 +564,23 @@
         height: 520px;
         width: 520px;
     }
-
+    
 }
-
+@media (min-width: 1440px){
+    .contenedor .card{
+        width: 420px;
+        height: 506px;
+        padding: 60px 30px;
+        margin: 20px;
+        background-color: rgb(96, 72, 235);
+        border-radius: 20px;
+    }
+    .contenedor .card .contenido .contenidoImagen{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        position: relative;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+}
