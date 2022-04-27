@@ -1,0 +1,547 @@
+@import "variables";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Rose', cursive;
+}
+
+/* NAVBAR INICIAL*/
+.navbar{
+    background-color: $color-container;
+    text-decoration: none;
+    li{
+        transition: all .5s;
+        &:hover{
+            background-color: rgb(49, 29, 223);
+        }
+    }
+}
+.navbar-brand{
+    text-decoration: none;
+    color: $color-textos; 
+}
+#navbar1{
+    color: $color-textos;
+    .nav-link{
+        color: $color-textos;
+        margin: 10px;
+    }
+}
+/* IMAGEN PRINCIPAL INDEX*/
+#imagenFondo{
+    background-image: url(/recursos/todaslasmarcas.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    display: grid;
+    grid-template-areas:    
+    "titulo"
+    "texto";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    color: $color-textos;
+    margin: auto;
+    #titulo{
+        grid-area: titulo;
+        font-size: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 200px;
+    }
+    #texto{
+        grid-area: texto;
+        font-size: 30px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+/* CAJAS DE INCIO DESCUENTOS*/
+.caja{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(228, 228, 228);
+    margin: 15 auto;
+    padding: 15 auto;
+    .cajaCard{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        background-color: $color-textos;
+        transition: all .7s;
+        border-radius: 1rem;
+        border-style: solid;
+        border-width: 1px;
+        .cajaCard__imagen{
+            width: 100%;
+            height: 65%;
+            margin: 0 auto;
+            object-fit: cover;
+            object-position: center;
+        }
+        .cajaCard__texto{
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+}
+/* NOSOTROS*/
+#imagenNosotros{
+    background-image: url(../recursos/abstract-colorful-background-free-vector.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    display: grid;
+    grid-template-areas:    
+    "titulo"
+    " texto";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    color: $color-textos;
+    margin: auto;
+    #titulo{
+        grid-area: titulo;
+        font-size: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 160px;
+    }
+    #texto{
+        grid-area: texto;
+        font-size: 30px;
+        justify-content: center;
+        text-align: center;
+        margin-top: -50px;
+    }
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 100%;
+    background-color:$color-textos ;
+    .card{
+        width: 330px;
+        height: 416px;
+        padding: 60px 30px;
+        margin: 20px;
+        background-color: rgb(96, 72, 235);
+        border-radius: 20px;
+        .contenido{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .contenidoImagen{
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                position: relative;
+                margin-bottom: 20px;
+                overflow: hidden;
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .contenidoTexto {
+                h4{
+                    color: $color-textos;
+                    font-size: 1.7rem;
+                    font-weight: bold;
+                    text-align: center;
+                    letter-spacing: 1px;
+                }
+                .contenidoTexto h5{
+                    color: #b0b1b4;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+            .contenidoLinks{
+                margin-top: 20px;
+                a{
+                    text-decoration: none;
+                    color: $color-textos;
+                    font-size: 30px;
+                    margin: 10px;
+                }
+            }
+            
+        }
+    }
+}
+/* AYUDA*/
+.accordion{
+    margin: 40px 40px;
+    padding: 20px 20px;
+    align-items: center;
+    .accordion-item{
+        background-color: rgb(35, 35, 100);
+        .accordion-button{
+            background-color: rgb(56, 56, 148);
+            color: $color-textos;
+            padding: 20px;
+            padding: 10px 10px;
+            margin: 20px 20px;
+        }
+        .accordion-body{
+            color: $color-textos;
+            font-size: 20px;
+            .accordionTexto2{
+                text-align: left;
+                font-style: italic;
+                font-size: 1rem;
+            }
+        }
+        
+    }
+}
+/* FOOTER GENERAL*/
+.footer{
+    width: 100%;
+    background-color: rgb(33, 20, 151);
+    .grupo1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+        .box {
+            figure{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h1{
+                    font-size: 3rem;
+                    text-decoration: none;
+                    color: $color-textos;
+                }
+            }
+            h2{
+                color: $color-textos;
+                margin-bottom: 25px;
+                font-size: 1.5rem;
+            }
+            p{
+                color: rgb(230, 219, 219);
+                margin-bottom: 10px;
+            }
+            i{
+                background-color: aliceblue;
+                height: 20px;
+            }
+        }
+        .red-social {
+            a{
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: $color-textos;
+                margin-right: 10px;
+                text-align: center;
+            }
+        }
+    }
+    .derechos{
+        background-color: rgb(58, 39, 228);
+        padding: 15px 10px;
+        text-align: center;
+        color: $color-textos;
+        font-size: 15px;
+    }
+}
+/* MEDIA QUERIES */
+@media (max-width: 480px){
+    /* IMAGEN PRINCIPAL INDEX MAX 480PX */
+    #imagenFondo{
+        background-image: url(../recursos/todaslasmarcas.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        display: grid;
+        grid-template-areas:    
+        "titulo"
+        "texto";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        color: $color-textos;
+        margin: auto;
+        #titulo {
+            grid-area: titulo;
+            font-size: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #texto {
+            grid-area: texto;
+            font-size: 15px;
+            justify-content: center;
+            text-align: center;
+            margin-top: -50px;
+        }
+    }
+    /*NOSOTROS MAX 480PX */
+    #imagenNosotros{
+        background-image: url(../recursos/abstract-colorful-background-free-vector.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        display: grid;
+        grid-template-areas:    
+        "titulo"
+        "texto";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        color: $color-textos;
+        margin: auto;
+        #titulo {
+            grid-area: titulo;
+            font-size: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #texto {
+            grid-area: texto;
+            font-size: 15px;
+            justify-content: center;
+            text-align: center;
+            margin-top: -50px;
+        }
+    }
+    /*CAJAS DE PRODUCTOS MAX 480PX*/
+    .cajaCard{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        height: 300px;
+        width: 300px;
+        text-align: center;
+        background-color: $color-textos;
+        &:hover{
+            height: 400px;
+            width: 400px;
+        }
+        .cajaCard__imagen{
+            width: 100%;
+            height: 65%;
+            margin: 0 auto;
+            object-fit: cover;
+            object-position: center;
+        }
+        .cajaCard__texto{
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+}
+@media (max-width: 767px){
+    /* IMAGEN PRINCIPAL INDEX MAX 767PX */
+    #imagenFondo{
+        background-image: url(../recursos/todaslasmarcas.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: grid;
+        grid-template-areas:    
+        "titulo"
+        "texto";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        color: $color-textos;
+        margin: auto;
+        #titulo {
+            grid-area: titulo;
+            font-size: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 140px;
+        }
+        #texto {
+            grid-area: texto;
+            font-size: 15px;
+            justify-content: center;
+            text-align: center;
+            margin-top: -60px;
+        }
+    }
+    /*NOSOTROS MAX 767PX */
+    #imagenNosotros{
+        background-image: url(../recursos/abstract-colorful-background-free-vector.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: grid;
+        grid-template-areas:    
+        "titulo"
+        "texto";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        color: $color-textos;
+        margin: auto;
+        #titulo {
+            grid-area: titulo;
+            font-size: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 140px;
+        }
+        #texto {
+            grid-area: texto;
+            font-size: 15px;
+            justify-content: center;
+            text-align: center;
+            margin-top: -60px;
+        }
+    }
+    /*CAJAS DE PRODUCTOS MAX 767PX*/
+    .cajaCard{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        height: 300px;
+        width: 300px;
+        text-align: center;
+        background-color: $color-textos;
+        &:hover{
+            height: 400px;
+            width: 400px;
+        }
+        .cajaCard__imagen{
+            width: 100%;
+            height: 65%;
+            margin: 0 auto;
+            object-fit: cover;
+            object-position: center;
+        }
+        .cajaCard__texto{
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+    /*FOOTER*/
+    .footer{
+        .grupo1{
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+        }
+    }
+}
+@media (max-width: 1079px) {
+    /*cajas de productos MAX 1080*/
+    .cajaCard{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        height: 400px;
+        width: 400px;
+        text-align: center;
+        background-color: $color-textos;
+        &:hover{
+            height: 410px;
+            width: 410px;
+        }
+        .cajaCard__imagen{
+            width: 100%;
+            height: 65%;
+            margin: 0 auto;
+            object-fit: cover;
+            object-position: center;
+        }
+        .cajaCard__texto{
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+}
+@media (min-width: 1080px) {
+    .cajaCard{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        height: 500px;
+        width: 500px;
+        text-align: center;
+        background-color: $color-textos;
+        &:hover{
+            height: 520px;
+            width: 520px;
+        }
+        .cajaCard__imagen{
+            width: 100%;
+            
+            margin: 0 auto;
+            object-fit: cover;
+            object-position: center;
+        }
+        .cajaCard__texto{
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+}
+@media (min-width: 1440px){
+    .contenedor {
+        .card{
+            width: 420px;
+            height: 506px;
+            padding: 60px 30px;
+            margin: 20px;
+            background-color: rgb(96, 72, 235);
+            border-radius: 20px;
+            .contenido{
+                .contenidoImagen{
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 50%;
+                    position: relative;
+                    margin-bottom: 20px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

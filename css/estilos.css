@@ -1,56 +1,41 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Red Rose', cursive;
-    
-}
-                    /* NAVBAR INICIAL*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Red Rose', cursive; }
 
-.navbar{
-    background-color: rgb(33, 20, 151);
-    text-decoration: none;
-    
-}
-.navbar li{
-    transition: all .5s;
-}
-.navbar li:hover{
-    background-color: rgb(49, 29, 223);
-    
-}
-.navbar-brand{
-    text-decoration: none;
+/* NAVBAR INICIAL*/
+.navbar {
+  background-color: #211497;
+  text-decoration: none; }
+  .navbar li {
+    transition: all .5s; }
+    .navbar li:hover {
+      background-color: #311ddf; }
+
+.navbar-brand {
+  text-decoration: none;
+  color: white; }
+
+#navbar1 {
+  color: white; }
+  #navbar1 .nav-link {
     color: white;
-}
-#navbar1{
-    color: white;
+    margin: 10px; }
 
-}
-#navbar1 .nav-link {
-    color: white;
-    margin: 10px;
-}
-                    /* IMAGEN PRINCIPAL INDEX*/
-
-
-
-#imagenFondo{
-    background-image: url(../recursos/todas\ las\ marcas.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: 700px;
-    display: grid;
-    grid-template-areas:    
-    "titulo"
-    "texto";
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    
-    color: white;
-    margin: auto;
-
-}
-#imagenFondo #titulo {
+/* IMAGEN PRINCIPAL INDEX*/
+#imagenFondo {
+  background-image: url(/recursos/todaslasmarcas.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  display: grid;
+  grid-template-areas: "titulo"
+ "texto";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  color: white;
+  margin: auto; }
+  #imagenFondo #titulo {
     grid-area: titulo;
     font-size: 70px;
     display: flex;
@@ -58,81 +43,59 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 200px;
-}
-#imagenFondo #texto {
+    margin-top: 200px; }
+  #imagenFondo #texto {
     grid-area: texto;
     font-size: 30px;
     justify-content: center;
     text-align: center;
-    margin-top: 50px;
-}
+    margin-top: 50px; }
 
-
-
-
-
-                    /* CAJAS DE INCIO DESCUENTOS*/
-.caja{
-    display:flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    background-color: rgb(228, 228, 228);
-    margin: 15 auto;
-    padding: 15 auto;
-    
-    
-}
-
-.cajaCard{
+/* CAJAS DE INCIO DESCUENTOS*/
+.caja {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: #e4e4e4;
+  margin: 15 auto;
+  padding: 15 auto; }
+  .caja .cajaCard {
     display: flex;
     flex-direction: column;
     margin: 10px;
     padding: 10px;
-    height: 400px;
-    width: 400px;
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     transition: all .7s;
     border-radius: 1rem;
     border-style: solid;
-    border-width: 1px;
-    
+    border-width: 1px; }
+    .caja .cajaCard .cajaCard__imagen {
+      width: 100%;
+      height: 65%;
+      margin: 0 auto;
+      object-fit: cover;
+      object-position: center; }
+    .caja .cajaCard .cajaCard__texto {
+      text-align: center;
+      font-size: 15px; }
 
-}
-
-.cajaCard__imagen{
-    width: 100%;
-    height: 65%;
-    margin: 0 auto;
-    object-fit: cover;
-    object-position: center;
-}
-.cajaCard__texto{
-    text-align: center;
-    font-size: 15px;
-}
-
-                    /* NOSOTROS*/
-
-#imagenNosotros{
-    background-image: url(../recursos/abstract-colorful-background-free-vector.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 700px;
-    display: grid;
-    grid-template-areas:    
-    "titulo"
-    " texto";
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    color: white;
-    margin: auto;
-
-}
-#imagenNosotros #titulo {
+/* NOSOTROS*/
+#imagenNosotros {
+  background-image: url(../recursos/abstract-colorful-background-free-vector.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  display: grid;
+  grid-template-areas: "titulo"
+ " texto";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  color: white;
+  margin: auto; }
+  #imagenNosotros #titulo {
     grid-area: titulo;
     font-size: 60px;
     display: flex;
@@ -140,447 +103,359 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 160px;
-
-}
-#imagenNosotros #texto {
+    margin-top: 160px; }
+  #imagenNosotros #texto {
     grid-area: texto;
     font-size: 30px;
     justify-content: center;
     text-align: center;
-    margin-top: -50px;
-}
+    margin-top: -50px; }
 
-.contenedor{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    width: 100%;
-    background-color:rgb(255, 255, 255) ;
-
-    
-    
-}
-.contenedor .card{
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  width: 100%;
+  background-color: white; }
+  .contenedor .card {
     width: 330px;
     height: 416px;
     padding: 60px 30px;
     margin: 20px;
-    background-color: rgb(96, 72, 235);
-    border-radius: 20px;
-}
-.contenedor .card .contenido{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.contenedor .card .contenido .contenidoImagen{
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    position: relative;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-.contenedor .card .contenido .contenidoTexto h4{
-    color: rgb(255, 255, 255);
-    font-size: 1.7rem;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 1px;
-}
-.contenedor .card .contenido .contenidoTexto h5{
-    color: #b0b1b4;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    
-}
-.contenedor .card .contenido .contenidoImagen img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.contenedor .card .contenido .contenidoLinks{
-    margin-top: 20px;
-}
-.contenedor .card .contenido .contenidoLinks a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 30px;
-    margin: 10px;
-}
+    background-color: #6048eb;
+    border-radius: 20px; }
+    .contenedor .card .contenido {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .contenedor .card .contenido .contenidoImagen {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        position: relative;
+        margin-bottom: 20px;
+        overflow: hidden; }
+        .contenedor .card .contenido .contenidoImagen img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .contenedor .card .contenido .contenidoTexto h4 {
+        color: white;
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px; }
+      .contenedor .card .contenido .contenidoTexto .contenidoTexto h5 {
+        color: #b0b1b4;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center; }
+      .contenedor .card .contenido .contenidoLinks {
+        margin-top: 20px; }
+        .contenedor .card .contenido .contenidoLinks a {
+          text-decoration: none;
+          color: white;
+          font-size: 30px;
+          margin: 10px; }
 
-                    /* AYUDA*/
+/* AYUDA*/
+.accordion {
+  margin: 40px 40px;
+  padding: 20px 20px;
+  align-items: center; }
+  .accordion .accordion-item {
+    background-color: #232364; }
+    .accordion .accordion-item .accordion-button {
+      background-color: #383894;
+      color: white;
+      padding: 20px;
+      padding: 10px 10px;
+      margin: 20px 20px; }
+    .accordion .accordion-item .accordion-body {
+      color: white;
+      font-size: 20px; }
+      .accordion .accordion-item .accordion-body .accordionTexto2 {
+        text-align: left;
+        font-style: italic;
+        font-size: 1rem; }
 
-
-.accordion-item{
-    background-color: rgb(35, 35, 100);
-}
-.accordion-button{
-    padding: 10px 10px;
-    margin: 20px 20px;
-}
-
-.accordion-item .accordionTexto2{
-    text-align: left;
-    font-style: italic;
-    font-size: 1rem;
-    
-
-}
-.accordion-button{
-    background-color: rgb(56, 56, 148);
-    color: white;
-    padding: 20px;
-}
-
-.accordion{
-    margin: 40px 40px;
-    padding: 20px 20px;
-}
-
-.accordion-body{
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-}
-
-                    /* FOOTER GENERAL*/
-.footer{
-    width: 100%;
-    background-color: rgb(33, 20, 151);
-}
-.footer .grupo1{
+/* FOOTER GENERAL*/
+.footer {
+  width: 100%;
+  background-color: #211497; }
+  .footer .grupo1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    padding: 45px 0px;
-}
-.footer .grupo1 .box figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer .grupo1 .box figure h1{
-    font-size: 3rem;
-    text-decoration: none;
-    color: white;
-}
-.footer .grupo1 .box h2{
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 1.5rem;
-}
-.footer .grupo1 .box p{
-    color: rgb(230, 219, 219);
-    margin-bottom: 10px;
-}
-.footer .grupo1 .red-social a{
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: #fff;
-    margin-right: 10px;
-    text-align: center;
-}
-.footer .derechos{
-    background-color: rgb(58, 39, 228);
+    padding: 45px 0px; }
+    .footer .grupo1 .box figure {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .footer .grupo1 .box figure h1 {
+        font-size: 3rem;
+        text-decoration: none;
+        color: white; }
+    .footer .grupo1 .box h2 {
+      color: white;
+      margin-bottom: 25px;
+      font-size: 1.5rem; }
+    .footer .grupo1 .box p {
+      color: #e6dbdb;
+      margin-bottom: 10px; }
+    .footer .grupo1 .box i {
+      background-color: aliceblue;
+      height: 20px; }
+    .footer .grupo1 .red-social a {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: white;
+      margin-right: 10px;
+      text-align: center; }
+  .footer .derechos {
+    background-color: #3a27e4;
     padding: 15px 10px;
     text-align: center;
-    color: #fff;
-    font-size: 15px;
-}
-.footer .grupo1 .box i{
-    background-color: aliceblue;
-    height: 20px;
-}
-                    /* MEDIA QUERIES */
+    color: white;
+    font-size: 15px; }
+
+/* MEDIA QUERIES */
+@media (max-width: 480px) {
+  /* IMAGEN PRINCIPAL INDEX MAX 480PX */
+  #imagenFondo {
+    background-image: url(../recursos/todaslasmarcas.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: grid;
+    grid-template-areas: "titulo"
+ "texto";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    color: white;
+    margin: auto; }
+    #imagenFondo #titulo {
+      grid-area: titulo;
+      font-size: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 50px; }
+    #imagenFondo #texto {
+      grid-area: texto;
+      font-size: 15px;
+      justify-content: center;
+      text-align: center;
+      margin-top: -50px; }
+  /*NOSOTROS MAX 480PX */
+  #imagenNosotros {
+    background-image: url(../recursos/abstract-colorful-background-free-vector.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: grid;
+    grid-template-areas: "titulo"
+ "texto";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    color: white;
+    margin: auto; }
+    #imagenNosotros #titulo {
+      grid-area: titulo;
+      font-size: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 50px; }
+    #imagenNosotros #texto {
+      grid-area: texto;
+      font-size: 15px;
+      justify-content: center;
+      text-align: center;
+      margin-top: -50px; }
+  /*CAJAS DE PRODUCTOS MAX 480PX*/
+  .cajaCard {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    background-color: white; }
+    .cajaCard:hover {
+      height: 400px;
+      width: 400px; }
+    .cajaCard .cajaCard__imagen {
+      width: 100%;
+      height: 65%;
+      margin: 0 auto;
+      object-fit: cover;
+      object-position: center; }
+    .cajaCard .cajaCard__texto {
+      text-align: center;
+      font-size: 15px; } }
 
 @media (max-width: 767px) {
-    /* IMAGEN PRINCIPAL INDEX MAX 767PX */
-    #imagenFondo{
-        background-image: url(../recursos/todas\ las\ marcas.jpeg);
-        background-size: cover;
-        background-position: center;
-        height: 500px;
-        display: grid;
-        grid-template-areas:    
-        "titulo"
-        "texto";
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        
-        color: white;
-        margin: auto;
-    
-    }
+  /* IMAGEN PRINCIPAL INDEX MAX 767PX */
+  #imagenFondo {
+    background-image: url(../recursos/todaslasmarcas.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: grid;
+    grid-template-areas: "titulo"
+ "texto";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    color: white;
+    margin: auto; }
     #imagenFondo #titulo {
-        grid-area: titulo;
-        font-size: 40px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-top: 140px;
-    }
+      grid-area: titulo;
+      font-size: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 140px; }
     #imagenFondo #texto {
-        grid-area: texto;
-        font-size: 15px;
-        justify-content: center;
-        text-align: center;
-        margin-top: -60px;
-    }
-    
-    /*NOSOTROS MAX 767PX */
-    
-    #imagenNosotros{
-        background-image: url(../recursos/abstract-colorful-background-free-vector.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 500px;
-        display: grid;
-        grid-template-areas:    
-        "titulo"
-        "texto";
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        color: white;
-        margin: auto;
-    
-    }
+      grid-area: texto;
+      font-size: 15px;
+      justify-content: center;
+      text-align: center;
+      margin-top: -60px; }
+  /*NOSOTROS MAX 767PX */
+  #imagenNosotros {
+    background-image: url(../recursos/abstract-colorful-background-free-vector.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: grid;
+    grid-template-areas: "titulo"
+ "texto";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    color: white;
+    margin: auto; }
     #imagenNosotros #titulo {
-        grid-area: titulo;
-        font-size: 40px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-top: 140px;
-    }
+      grid-area: titulo;
+      font-size: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 140px; }
     #imagenNosotros #texto {
-        grid-area: texto;
-        font-size: 15px;
-        justify-content: center;
-        text-align: center;
-        margin-top: -60px;
-    }
-    
-    /*cajas de productos MAX 767PX*/
-    .cajaCard{
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        padding: 10px;
-        height: 300px;
-        width: 300px;
-        text-align: center;
-        background-color: rgb(255, 255, 255);
-    }
-    .cajaCard:hover{
-        height: 400px;
-        width: 400px;
-    }
-    
-    .cajaCard__imagen{
-        width: 100%;
-        height: 65%;
-        margin: 0 auto;
-        object-fit: cover;
-        object-position: center;
-    }
-    .cajaCard__texto{
-        text-align: center;
-        font-size: 15px;
-    }
-    /*footer*/
-    .footer .grupo1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
+      grid-area: texto;
+      font-size: 15px;
+      justify-content: center;
+      text-align: center;
+      margin-top: -60px; }
+  /*CAJAS DE PRODUCTOS MAX 767PX*/
+  .cajaCard {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    background-color: white; }
+    .cajaCard:hover {
+      height: 400px;
+      width: 400px; }
+    .cajaCard .cajaCard__imagen {
+      width: 100%;
+      height: 65%;
+      margin: 0 auto;
+      object-fit: cover;
+      object-position: center; }
+    .cajaCard .cajaCard__texto {
+      text-align: center;
+      font-size: 15px; }
+  /*FOOTER*/
+  .footer .grupo1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; } }
 
-    
+@media (max-width: 1079px) {
+  /*cajas de productos MAX 1080*/
+  .cajaCard {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    background-color: white; }
+    .cajaCard:hover {
+      height: 410px;
+      width: 410px; }
+    .cajaCard .cajaCard__imagen {
+      width: 100%;
+      height: 65%;
+      margin: 0 auto;
+      object-fit: cover;
+      object-position: center; }
+    .cajaCard .cajaCard__texto {
+      text-align: center;
+      font-size: 15px; } }
 
-}
-@media (max-width: 480px) {
-    /* IMAGEN PRINCIPAL INDEX MAX 480PX */
-    #imagenFondo{
-        background-image: url(../recursos/todas\ las\ marcas.jpeg);
-        background-size: cover;
-        background-position: center;
-        height: 300px;
-        display: grid;
-        grid-template-areas:    
-        "titulo"
-        "texto";
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        
-        color: white;
-        margin: auto;
-    
-    }
-    #imagenFondo #titulo {
-        grid-area: titulo;
-        font-size: 30px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-top: 50px;
-    }
-    #imagenFondo #texto {
-        grid-area: texto;
-        font-size: 15px;
-        justify-content: center;
-        text-align: center;
-        margin-top: -50px;
-    }
-    
-    /*NOSOTROS MAX 480PX */
-    
-    #imagenNosotros{
-        background-image: url(../recursos/abstract-colorful-background-free-vector.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 300px;
-        display: grid;
-        grid-template-areas:    
-        "titulo"
-        "texto";
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        color: white;
-        margin: auto;
-    
-    }
-    #imagenNosotros #titulo {
-        grid-area: titulo;
-        font-size: 30px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-top: 50px;
-    }
-    #imagenNosotros #texto {
-        grid-area: texto;
-        font-size: 15px;
-        justify-content: center;
-        text-align: center;
-        margin-top: -50px;
-    }
-    
-    /*cajas de productos MAX 480PX*/
-    .cajaCard{
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        padding: 10px;
-        height: 300px;
-        width: 300px;
-        text-align: center;
-        background-color: rgb(255, 255, 255);
-    }
-    .cajaCard:hover{
-        height: 400px;
-        width: 400px;
-    }
-    
-    .cajaCard__imagen{
-        width: 100%;
-        height: 65%;
-        margin: 0 auto;
-        object-fit: cover;
-        object-position: center;
-    }
-    .cajaCard__texto{
-        text-align: center;
-        font-size: 15px;
-    }
-
-}
-@media (max-width: 1080px) {
-    /*cajas de productos MAX 1080*/
-    .cajaCard{
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        padding: 10px;
-        height: 400px;
-        width: 400px;
-        text-align: center;
-        background-color: rgb(255, 255, 255);
-    
-    }
-    .cajaCard:hover{
-        height: 420px;
-        width: 420px;
-    }
-    
-    
-    .cajaCard__imagen{
-        width: 100%;
-        height: 65%;
-        margin: 0 auto;
-        object-fit: cover;
-        object-position: center;
-    }
-    
-    .cajaCard__texto{
-        text-align: center;
-        font-size: 15px;
-    }
-}
 @media (min-width: 1080px) {
-    .cajaCard{
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        padding: 10px;
-        height: 500px;
-        width: 500px;
-        text-align: center;
-        background-color: rgb(255, 255, 255);
-    
-    }
-    .cajaCard:hover{
-        height: 520px;
-        width: 520px;
-    }
-    
-}
-@media (min-width: 1440px){
-    .contenedor .card{
-        width: 420px;
-        height: 506px;
-        padding: 60px 30px;
-        margin: 20px;
-        background-color: rgb(96, 72, 235);
-        border-radius: 20px;
-    }
-    .contenedor .card .contenido .contenidoImagen{
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        position: relative;
-        margin-bottom: 20px;
-        overflow: hidden;
-    }
-}
+  .cajaCard {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    background-color: white; }
+    .cajaCard:hover {
+      height: 520px;
+      width: 520px; }
+    .cajaCard .cajaCard__imagen {
+      width: 100%;
+      margin: 0 auto;
+      object-fit: cover;
+      object-position: center; }
+    .cajaCard .cajaCard__texto {
+      text-align: center;
+      font-size: 15px; } }
+
+@media (min-width: 1440px) {
+  .contenedor .card {
+    width: 420px;
+    height: 506px;
+    padding: 60px 30px;
+    margin: 20px;
+    background-color: #6048eb;
+    border-radius: 20px; }
+    .contenedor .card .contenido .contenidoImagen {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      position: relative;
+      margin-bottom: 20px;
+      overflow: hidden; } }
