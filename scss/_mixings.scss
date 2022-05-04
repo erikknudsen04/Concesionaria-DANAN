@@ -1,0 +1,15 @@
+/*Mixin 1 */
+@mixin grid-center-cover {
+    display: grid;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    margin: auto;
+    
+}
+#imagenFondo{
+    @include grid-center-cover;
+}
+#imagenNosotros{
+    @include grid-center-cover;
+}

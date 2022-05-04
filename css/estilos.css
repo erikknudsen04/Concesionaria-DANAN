@@ -1,3 +1,19 @@
+/* maps */
+/*Mixin 1 */
+#imagenFondo {
+  display: grid;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  margin: auto; }
+
+#imagenNosotros {
+  display: grid;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  margin: auto; }
+
 * {
   padding: 0;
   margin: 0;
@@ -25,15 +41,10 @@
 /* IMAGEN PRINCIPAL INDEX*/
 #imagenFondo {
   background-image: url(../recursos/todaslasmarcas.jpeg);
-  background-size: cover;
-  background-position: center;
-  height: 700px;
-  display: grid;
   grid-template-areas: "titulo" "texto";
   grid-template-columns: auto;
   grid-template-rows: auto;
-  color: white;
-  margin: auto; }
+  color: white; }
   #imagenFondo #titulo {
     grid-area: titulo;
     font-size: 70px;
@@ -84,15 +95,10 @@
 /* NOSOTROS*/
 #imagenNosotros {
   background-image: url(../recursos/abstract-colorful-background-free-vector.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 700px;
-  display: grid;
   grid-template-areas: "titulo" " texto";
   grid-template-columns: auto;
   grid-template-rows: auto;
-  color: white;
-  margin: auto; }
+  color: white; }
   #imagenNosotros #titulo {
     grid-area: titulo;
     font-size: 60px;
