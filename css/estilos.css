@@ -1,4 +1,3 @@
-/* maps */
 /*Mixin 1 */
 #imagenFondo {
   display: grid;
@@ -61,16 +60,19 @@
     text-align: center;
     margin-top: 50px; }
 
-/* CAJAS DE INCIO DESCUENTOS*/
-.caja {
+.cajas, .caja, .contenedor {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+  flex-wrap: wrap; }
+
+/* CAJAS DE INCIO DESCUENTOS*/
+.caja {
   background-color: #e4e4e4;
   margin: 15 auto;
-  padding: 15 auto; }
+  padding: 15 auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
   .caja .cajaCard {
     display: flex;
     flex-direction: column;
@@ -116,9 +118,8 @@
     margin-top: -50px; }
 
 .contenedor {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
   align-items: center;
   min-height: 80vh;
   width: 100%;
@@ -155,7 +156,7 @@
         font-weight: bold;
         text-align: center;
         letter-spacing: 1px; }
-      .contenedor .card .contenido .contenidoTexto .contenidoTexto h5 {
+      .contenedor .card .contenido .contenidoTexto h5 {
         color: #b0b1b4;
         font-size: 1.2rem;
         font-weight: bold;

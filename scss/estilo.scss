@@ -57,16 +57,22 @@
         margin-top: 50px;
     }
 }
-/* CAJAS DE INCIO DESCUENTOS*/
-.caja{
+//para extend// en caja y contenedor
+.cajas{
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
-    justify-content: map-get($estilos, centro);
-    text-align: map-get($estilos, centro);
+    
+}
+/* CAJAS DE INCIO DESCUENTOS*/
+.caja{
+    @extend .cajas;
     background-color: rgb(228, 228, 228);
     margin: 15 auto;
     padding: 15 auto;
+    justify-content: map-get($estilos, centro);
+    text-align: map-get($estilos, centro);
+    align-items: map-get($estilos, centro);
     .cajaCard{
         display: flex;
         flex-direction: column;
@@ -120,9 +126,9 @@
     }
 }
 .contenedor{
-    display: flex;
-    flex-wrap: wrap;
+    @extend .cajas;
     justify-content: map-get($estilos, centro);
+    text-align: map-get($estilos, centro);
     align-items: map-get($estilos, centro);
     min-height: 80vh;
     width: 100%;
@@ -163,7 +169,7 @@
                     text-align: map-get($estilos, centro);
                     letter-spacing: 1px;
                 }
-                .contenidoTexto h5{
+                h5{
                     color: #b0b1b4;
                     font-size: 1.2rem;
                     font-weight: bold;
