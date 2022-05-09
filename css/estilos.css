@@ -3,14 +3,14 @@
   display: grid;
   background-size: cover;
   background-position: center;
-  height: 700px;
+  height: 600px;
   margin: auto; }
 
 #imagenNosotros {
   display: grid;
   background-size: cover;
   background-position: center;
-  height: 700px;
+  height: 600px;
   margin: auto; }
 
 * {
@@ -37,6 +37,11 @@
     color: white;
     margin: 10px; }
 
+/*h2 de todas los html */
+.tituloPagina {
+  padding: 10px;
+  margin: 10px; }
+
 /* IMAGEN PRINCIPAL INDEX*/
 #imagenFondo {
   background-image: url(../recursos/todaslasmarcas.jpeg);
@@ -58,7 +63,8 @@
     font-size: 30px;
     justify-content: center;
     text-align: center;
-    margin-top: 50px; }
+    margin-top: -80px;
+    padding: 50px; }
 
 .cajas, .caja, .contenedor {
   display: flex;
@@ -68,8 +74,6 @@
 /* CAJAS DE INCIO DESCUENTOS*/
 .caja {
   background-color: #e4e4e4;
-  margin: 15 auto;
-  padding: 15 auto;
   justify-content: center;
   text-align: center;
   align-items: center; }
@@ -92,7 +96,15 @@
       object-position: center; }
     .caja .cajaCard .cajaCard__texto {
       text-align: center;
-      font-size: 15px; }
+      font-size: 1rem; }
+    .caja .cajaCard .boton {
+      padding: 13px 30px;
+      border-radius: 15px;
+      border: none;
+      background: #211497;
+      color: white; }
+      .caja .cajaCard .boton:hover {
+        background-color: #3a27e4; }
 
 /* NOSOTROS*/
 #imagenNosotros {
@@ -115,7 +127,8 @@
     font-size: 30px;
     justify-content: center;
     text-align: center;
-    margin-top: -50px; }
+    margin-top: -50px;
+    padding: 50px; }
 
 .contenedor {
   justify-content: center;
@@ -170,25 +183,50 @@
           margin: 10px; }
 
 /* AYUDA*/
-.accordion {
-  margin: 40px 40px;
-  padding: 20px 20px;
-  align-items: center; }
-  .accordion .accordion-item {
-    background-color: #232364; }
-    .accordion .accordion-item .accordion-button {
-      background-color: #383894;
-      color: white;
-      padding: 20px;
-      padding: 10px 10px;
-      margin: 20px 20px; }
-    .accordion .accordion-item .accordion-body {
-      color: white;
-      font-size: 20px; }
-      .accordion .accordion-item .accordion-body .accordionTexto2 {
-        text-align: left;
-        font-style: italic;
-        font-size: 1rem; }
+.acordionTam {
+  padding: 10%; }
+  .acordionTam .accordion {
+    padding: 20px;
+    margin: 10px;
+    align-items: center; }
+    .acordionTam .accordion .accordion-item {
+      background-color: #232364; }
+      .acordionTam .accordion .accordion-item .accordion-button {
+        background-color: #383894;
+        color: white;
+        padding: 10px 10px;
+        margin: 20px 20px; }
+      .acordionTam .accordion .accordion-item .accordion-body {
+        color: white;
+        font-size: 20px; }
+        .acordionTam .accordion .accordion-item .accordion-body .accordionTexto2 {
+          text-align: left;
+          font-style: italic;
+          font-size: 1rem; }
+
+/*NOT FOUND*/
+.notfound {
+  background-color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; }
+  .notfound .notfoundImagen {
+    width: 50%; }
+  .notfound .notfoundTitulo {
+    color: black;
+    font-size: 20px;
+    padding: 20px; }
+  .notfound .notfoundboton {
+    padding: 13px 30px;
+    border-radius: 15px;
+    border: none;
+    background: #211497;
+    color: white; }
+    .notfound .notfoundboton:hover {
+      background-color: #3a27e4; }
 
 /* FOOTER GENERAL*/
 .footer {
@@ -321,7 +359,7 @@
     background-image: url(../recursos/todaslasmarcas.jpeg);
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 400px;
     display: grid;
     grid-template-areas: "titulo" "texto";
     grid-template-columns: auto;
@@ -348,7 +386,7 @@
     background-image: url(../recursos/abstract-colorful-background-free-vector.jpg);
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 400px;
     display: grid;
     grid-template-areas: "titulo" "texto";
     grid-template-columns: auto;
@@ -381,8 +419,8 @@
     text-align: center;
     background-color: white; }
     .cajaCard:hover {
-      height: 400px;
-      width: 400px; }
+      height: 310px;
+      width: 310px; }
     .cajaCard .cajaCard__imagen {
       width: 100%;
       height: 65%;
@@ -406,12 +444,12 @@
     flex-direction: column;
     margin: 10px;
     padding: 10px;
-    height: 400px;
+    height: 500px;
     width: 400px;
     text-align: center;
     background-color: white; }
     .cajaCard:hover {
-      height: 410px;
+      height: 510px;
       width: 410px; }
     .cajaCard .cajaCard__imagen {
       width: 100%;
@@ -434,8 +472,8 @@
     text-align: center;
     background-color: white; }
     .cajaCard:hover {
-      height: 520px;
-      width: 520px; }
+      height: 510px;
+      width: 510px; }
     .cajaCard .cajaCard__imagen {
       width: 100%;
       margin: 0 auto;

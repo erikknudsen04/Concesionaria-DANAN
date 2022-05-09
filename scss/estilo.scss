@@ -29,6 +29,12 @@
         margin: 10px;
     }
 }
+/*h2 de todas los html */
+.tituloPagina{
+    padding: 10px;
+    margin: 10px;
+}
+
 /* IMAGEN PRINCIPAL INDEX*/
 #imagenFondo{
     background-image: url(../recursos/todaslasmarcas.jpeg);
@@ -54,8 +60,10 @@
         font-size: 30px;
         justify-content: center;
         text-align: center;
-        margin-top: 50px;
+        margin-top: -80px;
+        padding: 50px;
     }
+    
 }
 //para extend// en caja y contenedor
 .cajas{
@@ -68,8 +76,6 @@
 .caja{
     @extend .cajas;
     background-color: rgb(228, 228, 228);
-    margin: 15 auto;
-    padding: 15 auto;
     justify-content: map-get($estilos, centro);
     text-align: map-get($estilos, centro);
     align-items: map-get($estilos, centro);
@@ -90,10 +96,22 @@
             margin: 0 auto;
             object-fit: cover;
             object-position: map-get($estilos, centro);
+            
         }
         .cajaCard__texto{
             text-align: map-get($estilos, centro);
-            font-size: 15px;
+            font-size: 1rem;
+            
+        }
+        .boton{
+            padding: 13px 30px;
+            border-radius: 15px;
+            border: none;
+            background: map-get($estilos, color);
+            color: white;
+            &:hover{
+                background-color: rgb(58, 39, 228);
+            }
         }
     }
 }
@@ -123,6 +141,7 @@
         justify-content: map-get($estilos, centro);
         text-align: map-get($estilos, centro);
         margin-top: -50px;
+        padding: 50px;
     }
 }
 .contenedor{
@@ -190,31 +209,65 @@
     }
 }
 /* AYUDA*/
-.accordion{
-    margin: 40px 40px;
-    padding: 20px 20px;
-    align-items: map-get($estilos, centro);
-    .accordion-item{
-        background-color: rgb(35, 35, 100);
-        .accordion-button{
-            background-color: rgb(56, 56, 148);
-            color: $color-textos;
-            padding: 20px;
-            padding: 10px 10px;
-            margin: 20px 20px;
-        }
-        .accordion-body{
-            color: $color-textos;
-            font-size: 20px;
-            .accordionTexto2{
-                text-align: left;
-                font-style: italic;
-                font-size: 1rem;
+.acordionTam{
+    padding: 10%;
+    .accordion{
+        padding: 20px;
+        margin: 10px;
+        align-items: map-get($estilos, centro);
+        .accordion-item{
+            background-color: rgb(35, 35, 100);
+            .accordion-button{
+                background-color: rgb(56, 56, 148);
+                color: $color-textos;
+                
+                padding: 10px 10px;
+                margin: 20px 20px;
             }
+            .accordion-body{
+                color: $color-textos;
+                font-size: 20px;
+                .accordionTexto2{
+                    text-align: left;
+                    font-style: italic;
+                    font-size: 1rem;
+                }
+            }
+            
         }
-        
     }
 }
+/*NOT FOUND*/
+.notfound{
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    .notfoundImagen{
+        width: 50%;
+    }
+    .notfoundTitulo{
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        padding: 20px;
+
+    }
+    .notfoundboton{
+        padding: 13px 30px;
+        border-radius: 15px;
+        border: none;
+        background: map-get($estilos, color);
+        color: white;
+        &:hover{
+            background-color: rgb(58, 39, 228);
+        }
+    }
+}
+
+
 /* FOOTER GENERAL*/
 .footer{
     width: 100%;
@@ -353,12 +406,14 @@
             height: 400px;
             width: 400px;
         }
+        
         .cajaCard__imagen{
             width: 100%;
             height: 65%;
             margin: 0 auto;
             object-fit: cover;
             object-position: center;
+            
         }
         .cajaCard__texto{
             text-align: center;
@@ -372,7 +427,7 @@
         background-image: url(../recursos/todaslasmarcas.jpeg);
         background-size: cover;
         background-position: center;
-        height: 500px;
+        height: 400px;
         display: grid;
         grid-template-areas:    
         "titulo"
@@ -404,7 +459,7 @@
         background-image: url(../recursos/abstract-colorful-background-free-vector.jpg);
         background-size: cover;
         background-position: center;
-        height: 500px;
+        height: 400px;
         display: grid;
         grid-template-areas:    
         "titulo"
@@ -442,8 +497,8 @@
         text-align: center;
         background-color: $color-textos;
         &:hover{
-            height: 400px;
-            width: 400px;
+            height: 310px;
+            width: 310px;
         }
         .cajaCard__imagen{
             width: 100%;
@@ -474,12 +529,12 @@
         flex-direction: column;
         margin: 10px;
         padding: 10px;
-        height: 400px;
+        height: 500px;
         width: 400px;
         text-align: center;
         background-color: $color-textos;
         &:hover{
-            height: 410px;
+            height: 510px;
             width: 410px;
         }
         .cajaCard__imagen{
@@ -506,12 +561,11 @@
         text-align: center;
         background-color: $color-textos;
         &:hover{
-            height: 520px;
-            width: 520px;
+            height: 510px;
+            width: 510px;
         }
         .cajaCard__imagen{
             width: 100%;
-            
             margin: 0 auto;
             object-fit: cover;
             object-position: center;
