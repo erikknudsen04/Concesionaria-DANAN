@@ -376,7 +376,7 @@
 
 /*NOT FOUND*/
 .notfound{
-    background-color: white;
+    background-color: #F7F7F7;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -403,6 +403,7 @@
     }
     .notfoundImagen{
         width: 40%;
+        padding: 20px;
     }
     
 }

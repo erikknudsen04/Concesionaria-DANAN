@@ -313,7 +313,7 @@
 
 /*NOT FOUND*/
 .notfound {
-  background-color: white;
+  background-color: #F7F7F7;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -334,7 +334,8 @@
     .notfound .notfoundboton:hover {
       background-color: #3a27e4; }
   .notfound .notfoundImagen {
-    width: 40%; }
+    width: 40%;
+    padding: 20px; }
 
 /* FOOTER GENERAL*/
 .footer {
