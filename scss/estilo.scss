@@ -79,9 +79,9 @@
     justify-content: map-get($estilos, centro);
     text-align: map-get($estilos, centro);
     align-items: map-get($estilos, centro);
-    
     .cajaCard{
         display: flex;
+        align-items: center;
         flex-direction: column;
         margin: 10px;
         padding: 10px;
