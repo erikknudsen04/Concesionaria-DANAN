@@ -378,9 +378,7 @@
     padding: 20px;
     .notfoundTitulo{
         color: rgb(0, 0, 0);
-        font-size: 20px;
         padding: 20px;
-        font-size: 1.5rem;
     }
     .notfoundboton{
         padding: 13px 30px;
@@ -393,7 +391,6 @@
         }
     }
     .notfoundImagen{
-        width: 40%;
         padding: 20px;
     }
     
@@ -685,6 +682,15 @@
             padding: 35px 0px;
         }
     }
+    /*notfound*/
+    .notfoundTitulo{
+        color: rgb(0, 0, 0);
+        font-size: 1.1rem;
+        padding: 20px;
+    }
+    .notfoundImagen{
+        width: 70%;
+    }
 }
 @media (max-width: 1079px) {
     /*cajas de productos MAX 1080*/
@@ -719,6 +725,15 @@
             padding-top: 10px;font-size: 1.5rem;
 
         }
+    }
+    .notfoundTitulo{
+        color: rgb(0, 0, 0);
+        font-size: 1.4rem;
+        padding: 20px;
+        
+    }
+    .notfoundImagen{
+        width: 100%;
     }
 }
 @media (min-width: 1080px) {
