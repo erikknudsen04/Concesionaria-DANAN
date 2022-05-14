@@ -44,7 +44,7 @@
 
 /* IMAGEN PRINCIPAL INDEX*/
 #imagenFondo {
-  background-image: url(../recursos/todaslasmarcas.jpeg);
+  background-image: url(../recursos/principal.jpg);
   grid-template-areas: "titulo" "texto";
   grid-template-columns: auto;
   grid-template-rows: auto;
@@ -214,8 +214,9 @@
   .content .contact-wrapper > * {
     padding: 1em; }
   .content .contact-wrapper {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px 0 rgba(39, 39, 39, 0.3);
     /* CONTACTO FORM */
+    color: #fff;
     /* CONTACTO INFO */ }
     .content .contact-wrapper .contact-form {
       background: #6048eb; }
@@ -227,7 +228,7 @@
           padding: 1em; }
           .content .contact-wrapper .contact-form form p label {
             display: block;
-            color: #000000; }
+            color: #ffffff; }
         .content .contact-wrapper .contact-form form button {
           width: 100%;
           padding: 1em;
@@ -253,7 +254,7 @@
           background: none;
           outline: 0;
           color: #fff;
-          border-bottom: 1px solid #000000; }
+          border-bottom: 1px solid #ffffff; }
         .content .contact-wrapper .contact-form form textarea {
           width: 100%;
           padding: .7em;
@@ -261,7 +262,7 @@
           background: none;
           outline: 0;
           color: #fff;
-          border-bottom: 1px solid #000000; }
+          border-bottom: 1px solid #ffffff; }
     .content .contact-wrapper .contact-info {
       background: #000; }
       .content .contact-wrapper .contact-info h4 {
@@ -383,7 +384,7 @@
 @media (max-width: 480px) {
   /* IMAGEN PRINCIPAL INDEX MAX 480PX */
   #imagenFondo {
-    background-image: url(../recursos/todaslasmarcas.jpeg);
+    background-image: url(../recursos/principal.jpg);
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -467,7 +468,7 @@
 @media (max-width: 767px) {
   /* IMAGEN PRINCIPAL INDEX MAX 767PX */
   #imagenFondo {
-    background-image: url(../recursos/todaslasmarcas.jpeg);
+    background-image: url(../recursos/principal.jpg);
     background-size: cover;
     background-position: center;
     height: 400px;

@@ -37,14 +37,13 @@
 
 /* IMAGEN PRINCIPAL INDEX*/
 #imagenFondo{
-    background-image: url(../recursos/todaslasmarcas.jpeg);
+    background-image: url(../recursos/principal.jpg);
     grid-template-areas:    
     "titulo"
     "texto";
     grid-template-columns: auto;
     grid-template-rows: auto;
     color: $color-textos;
-    
     #titulo{
         grid-area: titulo;
         font-size: 70px;
@@ -250,8 +249,9 @@
         padding: 1em;
     }
     .contact-wrapper {
-        box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+        box-shadow: 0 0 20px 0 rgba(39, 39, 39, 0.3);
         /* CONTACTO FORM */
+        color: #fff;
         .contact-form {
             background: rgb(96, 72, 235);
             
@@ -263,7 +263,7 @@
                     padding: 1em;
                     label {
                         display: block;
-                        color: #000000;
+                        color: #ffffff;
                     }
                 }
                 button{
@@ -295,7 +295,7 @@
                     background: none;
                     outline: 0;
                     color: #fff;
-                    border-bottom: 1px solid #000000;
+                    border-bottom: 1px solid #ffffff;
                 }
                 textarea{
                     width: 100%;
@@ -304,7 +304,7 @@
                     background: none;
                     outline: 0;
                     color: #fff;
-                    border-bottom: 1px solid #000000 ;
+                    border-bottom: 1px solid #ffffff ;
                 }
                 
             }
@@ -469,7 +469,7 @@
 @media (max-width: 480px){
     /* IMAGEN PRINCIPAL INDEX MAX 480PX */
     #imagenFondo{
-        background-image: url(../recursos/todaslasmarcas.jpeg);
+        background-image: url(../recursos/principal.jpg);
         background-size: cover;
         background-position: center;
         height: 300px;
@@ -568,7 +568,7 @@
 @media (max-width: 767px){
     /* IMAGEN PRINCIPAL INDEX MAX 767PX */
     #imagenFondo{
-        background-image: url(../recursos/todaslasmarcas.jpeg);
+        background-image: url(../recursos/principal.jpg);
         background-size: cover;
         background-position: center;
         height: 400px;
